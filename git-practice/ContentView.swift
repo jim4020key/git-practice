@@ -38,7 +38,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle("this is a test")
+            .navigationTitle("this is a test, GOOD LUCK")
             Text("Select an item")
         }
     }
