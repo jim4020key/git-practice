@@ -38,7 +38,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle("hello, world!")
+            .navigationTitle("third issue")
             Text("Select an item")
         }
     }
