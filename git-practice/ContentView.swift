@@ -38,6 +38,7 @@ struct ContentView: View {
                     }
                 }
             }
+            .navigationTitle("4th issue")
             Text("Select an item")
         }
     }
