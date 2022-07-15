@@ -15,7 +15,9 @@ struct ContentView: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
-
+    let first = "ㄱ"
+    let second = "ㅏ"
+    let third = "ㄴ"
     var body: some View {
         NavigationView {
             List {
@@ -41,6 +43,7 @@ struct ContentView: View {
             .navigationTitle("5th issue")
             Text("Select an item")
         }
+        .onAppear(perform: {print("\u{1830}")})
     }
 
     private func addItem() {
