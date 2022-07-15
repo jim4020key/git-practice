@@ -1,12 +1,3 @@
----
-name: Pull Request
-about: Merge a branch
-title: 'Feat: '
-labels: ''
-assignees: ''
-
----
-
 ## ❇️ Related-issue
 - closes #issue-number
 <!-- issue-number 수정해주세요. -->
