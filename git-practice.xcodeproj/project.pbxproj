@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D411C5328D5CF4B00A68066 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		4DB4D5D22828D38B0046FC58 /* git-practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "git-practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB4D5D52828D38B0046FC58 /* git_practiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = git_practiceApp.swift; sourceTree = "<group>"; };
 		4DB4D5D72828D38B0046FC58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,6 +40,7 @@
 		4DB4D5C92828D38B0046FC58 = {
 			isa = PBXGroup;
 			children = (
+				4D411C5328D5CF4B00A68066 /* .swiftlint.yml */,
 				4DB4D5D42828D38B0046FC58 /* git-practice */,
 				4DB4D5D32828D38B0046FC58 /* Products */,
 			);
@@ -80,6 +82,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DB4D5E52828D38E0046FC58 /* Build configuration list for PBXNativeTarget "git-practice" */;
 			buildPhases = (
+				4D411C5028D5CD4B00A68066 /* SwiftLint Script */,
 				4DB4D5CE2828D38B0046FC58 /* Sources */,
 				4DB4D5CF2828D38B0046FC58 /* Frameworks */,
 				4DB4D5D02828D38B0046FC58 /* Resources */,
@@ -137,6 +140,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D411C5028D5CD4B00A68066 /* SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4DB4D5CE2828D38B0046FC58 /* Sources */ = {
